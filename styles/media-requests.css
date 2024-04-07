@@ -1,0 +1,24 @@
+@media (max-width: 1360px) {
+    header{
+        justify-content: center;
+    }
+    .main-info{
+        column-gap: 0;
+        justify-content: space-between;
+        padding: 0 10px
+    }
+}
+
+@media (max-width: 940px) {
+    .navigation-bar{
+        display: none;
+    }
+
+    header{
+        justify-content: flex-start;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+}
