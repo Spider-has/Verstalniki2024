@@ -3,12 +3,16 @@ const burgerButtonId = "hamburger-button"
 const burgerListId = "hamburger-list"
 const burgerMenuId = "hamburger"
 
+
 window.onload = () => {
     console.log(1)
     let burgerMenu = document.getElementById(burgerMenuId);
     let burgerButton = document.getElementById(burgerButtonId);
     let burgerList = document.getElementById(burgerListId);
     let burgerWrapper = document.getElementById("burger-wrapper");
+    let bLine1 = document.getElementById("line1")
+    let bLine2 = document.getElementById("line2")
+    let bLine3 = document.getElementById("line3")
     let isListOpened = false
     if(burgerButton)
         burgerButton.addEventListener("click", () => {
@@ -25,6 +29,15 @@ window.onload = () => {
             {
                 burgerWrapper.classList.add("burger-wrapper")
             }
+            if(bLine1){
+                bLine1.classList.add("line1_rotate")
+            }
+            if(bLine2){
+                bLine2.classList.add("line2_rotate")
+            }
+            if(bLine3){
+                bLine3.classList.add("line3_rotate")
+            }
         }
         else{
             isListOpened = false
@@ -38,6 +51,16 @@ window.onload = () => {
             {
                 burgerWrapper.classList.add("burger-wrapper")
             }
+            if(bLine1){
+                bLine1.classList.remove("line1_rotate")
+            }
+            if(bLine2){
+                bLine2.classList.remove("line2_rotate")
+            }
+            if(bLine3){
+                bLine3.classList.remove("line3_rotate")
+            }
         }
+
     })
 }

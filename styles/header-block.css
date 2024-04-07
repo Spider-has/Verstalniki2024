@@ -119,19 +119,19 @@ header{
     position: absolute;
     top: 70px;
     right: 20px;
+    
 }
 
 .burger-menu_opened{
-    display: flex;
-    flex-direction: column;
+    position: sticky;
     top: 0px;
-    right: 0;
+    right: 0px;
+    align-self: flex-end;
     padding-top: 70px;
     padding-left: 30px;
-    gap: 30px;
     background-color: #03484b;
     width: 80%;
-    height: 100%;
+    height: 100vh;
 }
 
 .hamburger-lines{
@@ -165,17 +165,17 @@ header{
     transition: transform 0.4s ease-in-out;
 }
 
-.line1_rotate {
+.line2_rotate {
     transform: scaleY(0);
 }
 
-.line2_rotate {
-    transform: rotate(45deg);
+.line1_rotate {
+    transform: rotate(40deg);
 }
 
 
 .line3_rotate {
-    transform: rotate(45deg);
+    transform: rotate(-40deg);
 }
 
 
@@ -187,10 +187,26 @@ header{
     display: none;
     flex-direction: column;
     gap: 40px;
+    font: bold 16px/1.14 "Gilroy",sans-serif;
+    color: white;
 }
 
+.burger-elem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .burger-wrapper{
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.burger-text{
+    font: bold 16px/1.14 "Gilroy",sans-serif;
+    color: white;
+}
+
+.button_burger{
+    background-color: inherit;
 }
