@@ -8,11 +8,12 @@
     <link rel = "stylesheet" href="./styles/styles.css">
     <link rel = "stylesheet" href="./styles/styleAnton.css">
     <link rel = "stylesheet" href="./styles/mainStyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div>
         <div class="wrapper__offers">
-            <div class="wrapper__list-offers">
+            <div class="wrapper__list-offers" data-aos="fade-right">
                 <div class="list-offer__offer">
                     <div>
                         <img src="./svg/offer-list__icon1.svg">
@@ -59,10 +60,10 @@
             </div>
         </div>
         <div class="wrapper__projects">
-            <div class="projects__header">
+            <div class="projects__header" data-aos="flip-right">
                 <h1>Проекты команды ProductFit</h1>
             </div>
-            <div class="wrapper__list-projects">
+            <div class="wrapper__list-projects" data-aos="fade-right">
                 <div class="list-projects__project">
                     <div class="wrapper__project__image vertical-image">
                         <img src="./image/project1.png" class="project__image">
@@ -141,11 +142,11 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper__projects-button">
+            <div class="wrapper__projects-button" data-aos="fade-down">
                 <button class="projects-button">Все проекты</button>
             </div>
         </div>
-        <div class="wrapper__banner">
+        <div class="wrapper__banner" data-aos="fade-right">
             <div class="banner__text">
                 <div class="text-time">
                     <p>09 Августа 2021</p>
@@ -159,5 +160,8 @@
             </div>
         </div>
     </div>
+    <script src="./script/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/aosinit.js"></script>
 </body>
 </html>
