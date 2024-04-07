@@ -58,7 +58,12 @@
     text-align: center;
     font: bold 24px "Gilroy",sans-serif;
     width: 310px;
+
     color: #1E959B;
+}
+
+.offer-element__text{
+    height: 70px;
 }
 
 .leave-hare-block{
